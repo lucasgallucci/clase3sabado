@@ -1,0 +1,121 @@
+p{
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+}
+
+nav{
+	background: yellow;
+	padding: 10px 0;
+	overflow: auto;
+}
+
+.contenedor{
+	max-width: 900px;
+	margin: auto;
+}
+
+nav .logo{
+	max-width: 100px;
+	float: left;
+}
+
+
+nav ul.menu{
+	float: right;
+	margin-top: 10px;
+}
+
+nav ul.menu li{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+header{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e631f7+0,7db9e8+100 */
+	background: rgb(230,49,247); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(230,49,247,1) 0%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(230,49,247,1) 0%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(230,49,247,1) 0%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e631f7', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 80px 0;
+}
+
+header h1, header h2{
+	color: white;
+	font-family: Montserrat;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+header h2{
+	font-size: 20px;
+}
+
+
+.productos{
+	padding: 80px 0;
+}
+
+.productos h2{
+	font-family: Montserrat, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.productos article{
+	width: 30%;
+	display: inline-block;
+	margin:10px;
+}
+.productos article h3{
+	font-family: Montserrat;
+	margin: 10px 0;
+	font-size: 20px;
+}
+.productos article img{
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) and (min-width: 701px){
+	nav{
+		background: cyan;
+	}
+
+	header h2{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px){
+	header h1, header h2{
+		text-align: center;
+	}
+
+	nav .logo{
+		float: none;
+		display: block;
+    	margin: auto;
+	}
+
+	nav ul.menu{
+		float: none;
+    	text-align: center;
+	}
+
+	nav ul.menu li{
+		display: block;
+	}
+}
+
+
+@media screen and (max-width: 700px){
+	.productos article{
+	    width: 100%;
+	    display: block;
+	    max-width: 300px;
+	    margin: 70px auto;
+	}	
+}
